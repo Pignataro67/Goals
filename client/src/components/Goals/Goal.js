@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
-export default class Goal extends Component {
-  render(){
-    return(
-      <div>
-        {this.props.aim}
-      </div>
-    )
-  }
-}
+
+const Goal = ({ aim, strategy, category, objectives }) => (
+  <div className="Goal">
+    <h3>Aspiration: {aim}</h3>
+    <h4>Strategy: {strategy}</h4>
+    <h5>Category: {category}</h5>
+  </div>
+)
+
+export default Goal;
