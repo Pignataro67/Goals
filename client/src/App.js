@@ -6,8 +6,8 @@ import GoalsContainer from './containers/GoalsContainer';
 function App() {
   return (
     <div className="App">
+    <h1>Goals</h1>
     <GoalsContainer />
-      <Goals />
     </div>
   );
 }
