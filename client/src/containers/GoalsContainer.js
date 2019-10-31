@@ -19,8 +19,7 @@ class GoalsContainer extends Component {
 
   render(){
     return(
-      <div>
-        <AddGoal />
+        <div className="Goals-container">
         <GoalsList goals={this.state.goals} />
       </div>
     )

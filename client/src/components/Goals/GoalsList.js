@@ -1,22 +1,17 @@
-import React, { Component } from 'react';
-import Goal from './Goal'
+import React from 'react';
+import Goal from './Goal';
 
 
-export default class GoalsList extends Component {
-  render(){
-    const { goals }  = this.props; 
+const GoalsList = ({ goals }) => (
+    <h3>Your Goals</h3>
+  <div>
+    <ol>
+      <li>
+        <Goal key={goal.id} aim={goal.aim} goal={goal} strategy={goal.strategy} 
+          category={goal.category} objectives={goal.objectives} />
+      </li> ))}
+    </ol>
+  </div>
+);
 
-    const listGoals = goals.map(g => {
-      return (
-        <li><Goal key={g.id} aim={g.aim} goal={g} strategy={g.strategy} category={g.category}/></li>
-      )
-    })
-
-    return(
-      <ol>
-        {listGoals}
-      </ol>
-    )
-
-  }
-}
+export default GoalsList;
