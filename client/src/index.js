@@ -7,6 +7,8 @@ import * as serviceWorker from './serviceWorker';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware, compose } from 'redux';
 import rootReducer from './reducers/index';
+import { Provider } from 'react-redux'
+import thunk from 'redux-thunk';
 import AddGoal from './components/Goals/AddGoal';
 import GoalsContainer from './containers/GoalsContainer';
 
@@ -19,9 +21,11 @@ createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
 
 
 ReactDOM.render((
-    <Router>
-     <App />
-    </Router>), 
+     <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>),  
     document.getElementById('root')
   );
 
