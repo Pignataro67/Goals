@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -16,16 +16,11 @@ compose;
 const store =
 createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)));
 
-const About = () => <h1>My About Component</h1>
+
 
 ReactDOM.render((
     <Router>
-      <React.Fragment>
-        <Route exact path='/' component={App} />
-        <Route exact path='/about' render={About} />
-        <Route exact path='/goals/new' component={AddGoal} />
-        <Route exact path='/goals' component={GoalsContainer} />
-      </React.Fragment>
+     <App />
     </Router>), 
     document.getElementById('root')
   );
