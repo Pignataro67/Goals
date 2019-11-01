@@ -20,7 +20,7 @@ class AddGoal extends Component {
   }
 
   handleOnSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     this.props.dispatch({type: "ADD_GOAL", goal: this.state })
   }
   
