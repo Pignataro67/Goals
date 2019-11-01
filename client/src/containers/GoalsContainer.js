@@ -2,30 +2,25 @@ import React, { Component } from 'react';
 import AddGoal from '../components/Goals/AddGoal';
 import GoalsList from '../components/Goals/GoalsList';
 import AddGoal from '../components/Goals/AddGoal';
+import { connect } from 'react-redux';
 
 class GoalsContainer extends Component {
-
-  constructor(){
-      super()
-      this.state = {
-      goals: []
-    }
-  }
-    
-  componentDidMount(){
-    fetch('./api/goals')
-      .then(response => response.json())
-      .then(goals => this.setState({goals}))
-  }
 
   render(){
     return(
         <div>
-        <GoalsList goals={this.state.goals} />
+          Hello
+        <GoalsList goals={this.props.goals} />
         <AddGoal />
       </div>
     )
   }
 }
 
-export default GoalsContainer;
+const mapStateToProps = (state) => {
+  return {
+    goals: state.goals
+  }
+}
+
+export default connect(mapStatetoProps)(GoalsContainer);

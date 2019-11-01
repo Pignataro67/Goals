@@ -26,7 +26,7 @@ class AddGoal extends Component {
   
   render(){
     return(
-      <Form onSubmit={this.handleOnSubmit}>
+      <Form className="new-goal-form" onSubmit={this.handleOnSubmit}>
       
         <Form.Field>
           <label>Your Aim:</label>
@@ -35,7 +35,7 @@ class AddGoal extends Component {
 
         <Form.Field>
           <label>Category</label>
-          <input placeholder="category" id="category" onChange={this.handleChange}/>
+          <input placeholder="Category" id="category" onChange={this.handleChange}/>
         </Form.Field>
 
         <Form.Field>
