@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react';
 
-class AddGoal extends Component {
+class GoalInput extends Component {
   
   constructor(){
     super()
