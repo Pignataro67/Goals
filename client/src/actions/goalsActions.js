@@ -1,4 +1,4 @@
-export const fetchGoals = () => {
+export function fetchGoals(){
   return (dispatch) => {
     dispatch({ type: "LOADING_GOALS"});
     return fetch('/api/goals.json')
