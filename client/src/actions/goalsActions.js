@@ -6,3 +6,7 @@ export const fetchGoals = () => {
       .then(goals => dispatch({type: "FETCH_GOALS", payload: goals }))
   }
 }
+
+export const addGoal = ( goalInput ) => {
+  return ({ type: "ADD_GOAL", goal: goalInput })
+}
