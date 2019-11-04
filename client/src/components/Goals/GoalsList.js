@@ -3,11 +3,12 @@ import Goal from './Goal';
 
 
 const GoalsList = ({ goals }) => (
-    <h3>Your Goals</h3>
+    // <h3>Your Goals</h3>
   <div>
     <ol>
+    {goals.map((goal) => (
       <li>
-        <Goal aim={goal.aim} goal={goal} strategy={goal.strategy} 
+        <Goal key={goal.id} aim={goal.aim} goal={goal} strategy={goal.strategy} 
           category={goal.category} objectives={goal.objectives} />
       </li> ))}
     </ol>
