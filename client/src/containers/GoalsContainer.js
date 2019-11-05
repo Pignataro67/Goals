@@ -28,4 +28,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStatetoProps, { fetchGoals })(GoalsContainer);
+export default connect(mapStatetoProps, { fetchGoals, deleteGoal })(GoalsContainer);
