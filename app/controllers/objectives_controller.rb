@@ -1,6 +1,9 @@
 class ObjectivesController < ApplicationController
+  before_action :set_goal
+  before_action :set_objective, only: [:show, :destroy]
+
   def index
-    @objectives = Objective.all
+    @objectives = @goal.objectives.all
     render json: @objectives
   end
 
