@@ -37,3 +37,7 @@ export const addGoal = ( goalInput ) => {
       .catch(err => err)
   }
 }
+
+export function deleteGoal(goal_id){
+  return ({type: "DELETE_GOAL", payload: goal_id})
+}
