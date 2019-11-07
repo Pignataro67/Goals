@@ -2,13 +2,13 @@
   text-align: center;
 }
 
-.Goals-container {
+/* .Goals-container {
   text-align: left;
 }
 
 .App-logo {
   height: 40vmin;
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -23,4 +23,11 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+div.goal {
+  padding: 20px;
+  border-style: solid;
+  margin-top: 10px;
+
 }

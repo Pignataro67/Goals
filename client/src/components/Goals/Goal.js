@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Button, Grid } from 'semantic-ui-react';
 
 class Goal extends Component {
   handleClick = () => {
@@ -8,7 +9,7 @@ class Goal extends Component {
   render(){
     const { aim, strategy, category, objectives, goal } = this.props;
     return(
-      <div className="Goal">
+      <div className="goal">
         <h3>{aim}</h3>
         <strong>Strategy:</strong>
           <p>{strategy}</p>

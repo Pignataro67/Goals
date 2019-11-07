@@ -1,10 +1,13 @@
 const goalsURL = "/api/goals";
-
+const headers = {
+  'Accept': 'application/json',
+  'Content-Type': 'application/json'
+}
 
 export function fetchGoals(){
   return (dispatch) => {
     dispatch({type: "LOADING_GOALS"})
-      return fetch(goalURL)
+      return fetch(goalsURL)
         .then(response => response.json())
         .then(goals => dispatch({type: 'FETCH_GOALS', payload: goals}))
   }
@@ -21,7 +24,7 @@ export const addGoal = ( goalInput ) => {
   }
     
   return dispatch => {
-    fetch(`${ goalURL }`, data)
+    fetch(`${ goalsURL }`, data)
       .then(response => response.json())
       .then(goal => dispatch({
         type: 'CREATE_GOAL',
