@@ -11,7 +11,7 @@ class ObjectivesContainer extends Component {
       <div>
         
         <ObjectiveInput />
-        <ObjectivesList  /> 
+        <ObjectivesList objectives={this.props.objectives}/> 
         
       </div>
     )
