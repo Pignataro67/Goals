@@ -3,7 +3,7 @@ import Goal from './Goal';
 
 
 const GoalsList = props => {
-  const goalsList = props.goals.map(goal => <li><Goal key={goal.id} {...goal} deleteGoal={props.deleteGoal}/></li>)
+  const goalsList = props.goals.map(goal => <li><Goal key={goal.id} goal={goal} {...goal} deleteGoal={props.deleteGoal}/></li>)
     return (
     <ol>
     {goalsList}
