@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Grid } from 'semantic-ui-react';
+import ObjectivesContainer from '../../containers/ObjectivesContainer';
 
 class Goal extends Component {
   handleClick = () => {
