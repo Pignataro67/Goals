@@ -15,4 +15,12 @@ class ObjectivesContainer extends Component {
   }
 }
 
-export default ObjectivesContainer;
+const mapStateToProps = ({objectives}) => {
+  return {objectives}
+}
+
+const mapDispatchToProps = dispatch => ({
+  addObjective: (objectiveInput, goalId) => dispatch(addObjective(objectiveInput, goalId))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ObjectivesContainer);
