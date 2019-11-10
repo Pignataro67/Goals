@@ -9,7 +9,7 @@ class ObjectivesContainer extends Component {
   render(){
     return(
       <div>
-        Objectives Container 
+        <ObjectivesList key={this.props.goal.id} goalId={this.props.goal.id} objectives={this.props.objectives} />
         <ObjectiveInput addObjective={this.props.addObjective} goalId={this.props.goal.id} />
       </div>
     )

@@ -8,6 +8,7 @@ import GoalInput from './components/Goals/GoalInput';
 import GoalsContainer from './containers/GoalsContainer';
 // import { Button } from 'semantic-ui-react';
 import { Container, Header } from 'semantic-ui-react';
+import ObjectivesContainer from './containers/ObjectivesContainer';
 
 function App() {
   return (

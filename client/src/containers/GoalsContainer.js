@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import AddGoal from '../components/Goals/AddGoal';
-import GoalsList from '../components/Goals/GoalsList';
+import Goals from '../components/Goals/Goals';
 import GoalInput from '../components/Goals/GoalInput';
 import { connect } from 'react-redux';
 import { fetchGoals, deleteGoal } from  '../actions/goalsActions';
@@ -16,7 +16,7 @@ class GoalsContainer extends Component {
     return(
       <Container fluid textAlign='justified'>
         <GoalInput />
-        <GoalsList goals={this.props.goals} deleteGoal={this.props.deleteGoal} />
+        <Goals goals={this.props.goals} deleteGoal={this.props.deleteGoal} />
       </Container>
     )
   }

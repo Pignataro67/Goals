@@ -2,7 +2,7 @@ import React from 'react';
 import Goal from './Goal';
 import { Container } from 'semantic-ui-react';
 
-const GoalsList = props => {
+const Goals = props => {
   const goalsList = props.goals.map(goal => <Goal key={goal.id} goal={goal} {...goal} deleteGoal={props.deleteGoal}/>)
     return (
     <ol>
@@ -11,4 +11,4 @@ const GoalsList = props => {
   );
 };
 
-export default GoalsList;
+export default Goals;
