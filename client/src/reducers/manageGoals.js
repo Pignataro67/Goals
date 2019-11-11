@@ -19,7 +19,6 @@ export default function goalsReducer(state = {
   loading: false,
   goalsData: [] 
   }, action){
-  
     switch(action.type){
       case 'CREATE_GOAL':
         console.log('creating', action.payload)
@@ -37,7 +36,7 @@ export default function goalsReducer(state = {
         console.log("In REDUCER: deleting", action.payload)
         return {...state, loading: false, goalsData: state.goalsData.filter(goal => goal.id !== action.payload.id)}
       default:
-        console.log("hit default case in reducer")
+        console.log("hit default case in goals reducer")
         return state;
   }
 }
