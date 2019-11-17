@@ -1,6 +1,6 @@
 class ObjectivesController < ApplicationController
   before_action :set_goal
-  before_action :set_objective, only: [:show, :destroy]
+  before_action :set_objective, only: [:show]
 
   def index
     @objectives = @goal.objectives.all
@@ -19,14 +19,11 @@ class ObjectivesController < ApplicationController
 
   def destroy
     @objective = Objective.find(params[:id])
-    if @objective.destroy
-      head(:ok)
-    else
-      head(:unprocessable_entity)
-    end
+    @objective.destroy
+    render json: @objective
   end
 
-  private
+  privaterender json: @objective
   def objective_params
     params.require(:objective).permit(:description)
   end
