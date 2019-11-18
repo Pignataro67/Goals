@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react';
 import ObjectivesContainer from '../../containers/ObjectivesContainer';
+import { addObjective, deleteObjective, fetchGoalObjectives } from '../../actions/objectivesActions';
+import { connect } from 'react-redux';
 
 class Goal extends Component {
   handleClick = () => {
@@ -17,10 +19,16 @@ class Goal extends Component {
         <strong>Category:</strong>
             <p>{category}</p>
         <Button basic color='red' size='mini' onClick={() => this.props.deleteGoal(this.props.id)}>Delete</Button>
-        <p><ObjectivesContainer goal={goal} objectives={objectives}/></p>
+        <ObjectivesContainer goal={goal} objectives={objectives} deleteObjective={this.props.deleteObjective} addObjective={this.props.addObjective}/>
       </div>
     )
   }
 }
 
-export default Goal;
+const mapDispatchToProps = dispatch => ({
+  fetchGoalObjectives: goalId => dispatch(fetchGoalObjectives(goalId)),
+  addObjective: (objectiveInput, goalId) => dispatch(addObjective(objectiveInput, goalId)),
+  deleteObjective: objectiveId => dispatch(deleteObjective(objectiveId))
+})
+
+export default connect(null, mapDispatchToProps)(Goal);
