@@ -5,6 +5,7 @@ import GoalInput from '../components/Goals/GoalInput';
 import { connect } from 'react-redux';
 import { fetchGoals, deleteGoal } from  '../actions/goalsActions';
 import { Container } from 'semantic-ui-react';
+import GoalsHeader from '../components/GoalsHeader';
 
 class GoalsContainer extends Component {
 
@@ -16,6 +17,7 @@ class GoalsContainer extends Component {
     return(
       <Container fluid textAlign='justified'>
         <GoalInput />
+        <GoalsHeader />
         <Goals goals={this.props.goals} deleteGoal={this.props.deleteGoal} />
       </Container>
     )
