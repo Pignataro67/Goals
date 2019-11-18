@@ -12,20 +12,20 @@ import ObjectivesContainer from './containers/ObjectivesContainer';
 
 function App() {
   return (
-    <Container>
+    <div>
         {/* <Header as='h1' className="main-header">Goals</Header> */}
-        <h1 className="App-header">Modern Aspiration</h1>
+      <h1 className="App-header">Modern Aspiration</h1>
+      <Container>
         <Header as='h3'className="tagline">TagLine here</Header>
         <NavBar />
 
-        <div>
           <Container>
             <Route exact path='/' render={Home} />
             <Route exact path='/goals/new' component={GoalInput} />
             <Route exact path='/goals' component={GoalsContainer} />
           </Container>
-        </div>
-    </Container>
+      </Container>
+    </div>
   );
 }
 
