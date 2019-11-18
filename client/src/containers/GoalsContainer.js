@@ -3,9 +3,9 @@ import AddGoal from '../components/Goals/AddGoal';
 import Goals from '../components/Goals/Goals';
 import GoalInput from '../components/Goals/GoalInput';
 import { connect } from 'react-redux';
-import { fetchGoals, deleteGoal } from  '../actions/goalsActions';
+import { fetchGoals, deleteGoal } from '../actions/goalsActions';
 import { Container } from 'semantic-ui-react';
-import GoalsHeader from '../components/GoalsHeader';
+import GoalsHeader from '../components/Goals/GoalsHeader';
 
 class GoalsContainer extends Component {
 

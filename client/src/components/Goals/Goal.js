@@ -11,7 +11,7 @@ class Goal extends Component {
     const { aim, strategy, category, goal } = this.props;
     return(
       <div className="goal">
-        <h3>{aim}</h3>
+        <Link key={this.props.id} to={`/goals/${goal.id}`}><h3>{aim}</h3></Link>
         <strong>Strategy:</strong>
           <p>{strategy}</p>
         <strong>Category:</strong>
