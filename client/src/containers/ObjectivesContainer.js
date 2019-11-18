@@ -18,13 +18,13 @@ class ObjectivesContainer extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {objectives: state.objectives.objectivesData}
-}
+const mapStateToProps = state => ({
+  objectives: state.goals.goalsData.map(goal => goal.objectives)
+})
 
 const mapDispatchToProps = dispatch => ({
   addObjective: (objectiveInput, goalId) => dispatch(addObjective(objectiveInput, goalId)),
   deleteObjective: objectiveId => dispatch(deleteObjective(objectiveId))
 })
 
-export default connect(null, mapDispatchToProps)(ObjectivesContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ObjectivesContainer);
