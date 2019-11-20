@@ -22,7 +22,7 @@ function App() {
           <Container>
             <Route exact path='/' render={Home} />
             <Route exact path='/goals/new' component={GoalInput} />
-            <Route path='/goals' render={routerProps => <GoalsContainer {...routerProps}/>} />
+            <Route exact path='/goals/:goalId/objectives' component={ObjectivesContainer} />
           </Container>
       </Container>
     </div>
