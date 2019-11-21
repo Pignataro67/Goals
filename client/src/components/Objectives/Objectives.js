@@ -1,5 +1,6 @@
 import React from 'react';
 import Objective from './Objective';
+import goalsReducer from '../../reducers/manageGoals';
 
 const Objectives = props => {
   const objectivesList = props.objectives.map(objective => 
@@ -8,7 +9,9 @@ const Objectives = props => {
         description={objective.description} deleteObjective={props.deleteObjective} />
     </li>)
     return (
-      <div> <strong>Key Objectives</strong>
+      <div> 
+      <h1>{props.goal.aim}</h1>
+      <strong>Key Objectives</strong>
         <ul>
           {objectivesList}
         </ul>
