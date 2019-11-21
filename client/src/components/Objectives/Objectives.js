@@ -4,7 +4,7 @@ import goalsReducer from '../../reducers/manageGoals';
 
 const Objectives = props => {
   const objectivesList = props.objectives.map(objective => 
-    <li>
+    <li  className="objective-items">
       <Objective key={objective.id} id={objective.id}
         description={objective.description} deleteObjective={props.deleteObjective} />
     </li>)

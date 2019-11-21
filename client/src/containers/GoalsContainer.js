@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AddGoal from '../components/Goals/AddGoal';
 import Goals from '../components/Goals/Goals';
 import GoalInput from '../components/Goals/GoalInput';
 import { connect } from 'react-redux';
@@ -36,4 +35,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStatetoProps, { fetchGoals, deleteGoal })(GoalsContainer);
+export default connect(mapStateToProps, { fetchGoals, deleteGoal })(GoalsContainer);

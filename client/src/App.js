@@ -6,17 +6,15 @@ import { Route } from 'react-router-dom';
 import Home from './components/Home';
 import GoalInput from './components/Goals/GoalInput';
 import GoalsContainer from './containers/GoalsContainer';
-// import { Button } from 'semantic-ui-react';
 import { Container, Header } from 'semantic-ui-react';
 import ObjectivesContainer from './containers/ObjectivesContainer';
 
 function App() {
   return (
     <div>
-        {/* <Header as='h1' className="main-header">Goals</Header> */}
       <h1 className="App-header">Modern Aspiration</h1>
       <Container>
-        <Header as='h3'className="tagline">TagLine here</Header>
+        <Header as='h2' className='tagline'>TagLine here</Header>
         <NavBar />
 
           <Container>
