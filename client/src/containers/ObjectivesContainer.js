@@ -29,6 +29,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
+  fetchGoalObjectives: goalId => dispatch(fetchGoalObjectives(goalId)),
+  fetchGoal: goalId => dispatch(fetchGoal(goalId)),
   addObjective: (objectiveInput, goalId) => dispatch(addObjective(objectiveInput, goalId)),
   deleteObjective: objectiveId => dispatch(deleteObjective(objectiveId))
 })
