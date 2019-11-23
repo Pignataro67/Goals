@@ -5,8 +5,13 @@ import goalsReducer from '../../reducers/manageGoals';
 const Objectives = props => {
   const objectivesList = props.objectives.map(objective => 
     <li  className="objective-items">
-      <Objective key={objective.id} id={objective.id}
-        description={objective.description} deleteObjective={props.deleteObjective} />
+       <Objective 
+         key={objective.id} 
+         id={objective.id}
+         description={objective.description} 
+         deleteObjective={props.deleteObjective}
+         toggleCompleted={props.toggleCompleted}
+       />
     </li>)
     return (
       <div> 
