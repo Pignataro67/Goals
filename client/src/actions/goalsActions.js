@@ -43,7 +43,7 @@ export const addGoal = ( goalInput ) => {
   }
 }
 
-export const deleteGoal = (goal_id) =>{
+export const deleteGoal = goal_id => {
   let data = {
     method: 'DELETE',
     headers: {
