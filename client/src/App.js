@@ -14,7 +14,7 @@ function App() {
     <div>
       <h1 className="App-header">Modern Aspiration</h1>
       <Container>
-        <Header as='h2' className='tagline'>TagLine here</Header>
+        <Header as='h3' className='tagline'>TagLine here</Header>
         <NavBar />
 
           <Container>
