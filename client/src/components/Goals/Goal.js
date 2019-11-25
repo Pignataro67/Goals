@@ -2,13 +2,8 @@ import React from 'react';
 import { Button } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
-class Goal extends Component {
-  handleClick = () => {
-    this.props.deleteGoal(this.props.id)
-  }
 
-  render(){
-    const Goal = ({ aim, deleteGoal, id }) => {
+  const Goal = ({ aim, deleteGoal, id }) => {
     
     return(
       <div className="goal">
@@ -18,6 +13,5 @@ class Goal extends Component {
       </div>
     )
   }
-}
 
 export default Goal;
