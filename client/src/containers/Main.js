@@ -21,7 +21,7 @@ class Main extends Component {
             <Route exact path='/' render={Home} />
             <Route exact path='/goals/new' component={GoalInput} />
             <Route exact path='/goals' component={GoalsContainer} />
-            <Route exact path='/goals/:goalId/objectives' component={ObjectivesContainer} />
+            <Route exact path='/goals/:goalId/' component={ObjectivesContainer} />
           </Container>
         
         </Container>
@@ -29,4 +29,5 @@ class Main extends Component {
     );
   }
 }
+
 export default Main;
