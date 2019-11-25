@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { fetchGoals, deleteGoal } from '../actions/goalsActions';
 import { Container } from 'semantic-ui-react';
 import GoalsHeader from '../components/Goals/GoalsHeader';
-// import { Route } from 'react-router-dom';
-// import GoalShow from '../components/Goals/GoalShow';
 
 class GoalsContainer extends Component {
 

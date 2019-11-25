@@ -1,8 +1,8 @@
 import React from 'react';
 import Objective from './Objective';
-import goalsReducer from '../../reducers/manageGoals';
+// import goalsReducer from '../../reducers/manageGoals';
 
-const Objectives = props => {
+const Objectives = (props) => {
   const objectivesList = props.objectives.map(objective => 
     <li  className="objective-items">
        <Objective 
