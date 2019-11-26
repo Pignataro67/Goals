@@ -15,13 +15,9 @@ class GoalsContainer extends Component {
   render(){
     return(
       <Container fluid textAlign='justified'>
-        <GoalInput />
         <GoalsHeader />
         <Goals goals={this.props.goals} deleteGoal={this.props.deleteGoal} />
-        {/* <Route exact path={this.props.match.url} render={()=>(<h3>Select a Goal From the List </h3>)}  />
-        <Route exact path={`${this.props.match.url}/:goalId`} component={GoalShow} />
-
-        <Goals goals={this.props.goals} deleteGoal={this.props.deleteGoal} /> */}
+        <GoalInput />
       </Container>
     )
   }
