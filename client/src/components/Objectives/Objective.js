@@ -23,7 +23,9 @@ export default class Objective extends Component {
   render(){
     return(
       <div>
-        
+        change delete button to icon
+        <Icon className="pointer" name='delete' color='red' onClick={() => this.props.deleteObjective(this.props.id)} />
+        <Checkbox checked={this.props.completed} onChange={(e) => this.handleCheck(e)} value={this.props.completed}/>{this.props.description}
       </div>
     )
   }
