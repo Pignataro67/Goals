@@ -3,14 +3,14 @@ import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react';
 
 class ObjectiveInput extends Component {
-  constructor(){
+  constructor() {
     super()
     this.state = {
       description: ""
     }
   }
 
-  handleChange = (e) =>{
+  handleChange = (e) => {
     this.setState({
       [e.target.id] : e.target.value
     })
@@ -24,7 +24,7 @@ class ObjectiveInput extends Component {
     })
   }
 
-  render(){
+  render() {
     return(
         <Form inverted className="new-objective-form" onSubmit={(e) =>this.handleOnSubmit(e)}>
 
