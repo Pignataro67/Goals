@@ -58,11 +58,6 @@ export const deleteObjective = id => {
   }
 }
 
-// export const toggleCompleted = id => ({
-//   type: 'TOGGLE_COMPLETED_OBJECTIVE',
-//   id
-// })
-
 export const toggleCompleted = id => {
   let data = {
     method: 'PATCH',

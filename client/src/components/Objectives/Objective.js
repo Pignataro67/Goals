@@ -12,6 +12,11 @@ export default class Objective extends Component {
 
   handleCheck = e => {
     e.preventDefault();
+    if (this.state.completed === false){
+      this.setState({completed: true})
+    } else {
+      this.setState({completed: false})
+    }
     this.props.toggleCompleted(this.props.id)
   }
 
@@ -25,7 +30,8 @@ export default class Objective extends Component {
       <div>
         change delete button to icon
         <Icon className="pointer" name='delete' color='red' onClick={() => this.props.deleteObjective(this.props.id)} />
-        <Checkbox checked={this.props.completed} onChange={(e) => this.handleCheck(e)} value={this.props.completed}/>{this.props.description}
+        <Checkbox value={this.props.completed} checked={this.state.completed} onChange={(e) => this.handleCheck(e)} />
+        {this.props.description} 
       </div>
     )
   }
