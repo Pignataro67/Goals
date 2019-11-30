@@ -9,15 +9,8 @@ const NavBar = () => {
       exact
       activeStyle={{
         color: 'grey'
-      }}>Home</NavLink> 
-
-      <span> | </span>
-
-    <NavLink to ="/goals/new"
-      exact
-      activeStyle ={{
-        color: 'grey'
-      }}>New Goal</NavLink> 
+      }}>Home
+    </NavLink> 
 
       <span> | </span>
 
@@ -25,7 +18,8 @@ const NavBar = () => {
       exact
       activeStyle={{
         color: 'grey'
-      }}>Your Goals </NavLink>
+      }}>Your Goals 
+    </NavLink>
     </div>
   )
 }
