@@ -1,6 +1,5 @@
 import React from 'react';
 import Objective from './Objective';
-// import goalsReducer from '../../reducers/manageGoals';
 
 const Objectives = (props) => {
   const objectivesList = props.objectives.map(objective => 
