@@ -18,10 +18,10 @@
 }
 
 div.goal, div.objectives-box {
-  width: 80%;
-  padding: 20px;
+  width: 75%;
+  padding: 15px;
   border-style: solid;
-  border-radius: 10px;
+  border-radius: 15px;
   border-width: thin;
   background-color: white;
   margin-top: 10px;
@@ -30,7 +30,7 @@ div.goal, div.objectives-box {
 
 .new-goal-form {
   width: 45%;
-  padding: 30px;
+  padding: 25px;
   border-color: #282c34;
   color: white;
   position: relative;
@@ -38,12 +38,12 @@ div.goal, div.objectives-box {
 
 .new-objective-form {
   width: 60%;
-  padding: 20px;
+  padding: 25px;
 }
 
 h3.ui.header.tagline {
   color: white;
-  padding: 20px;
+  padding: 15px;
 }
 
 .objective-items {
