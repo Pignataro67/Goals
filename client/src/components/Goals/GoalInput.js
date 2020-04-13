@@ -6,11 +6,10 @@ import { connect } from 'react-redux';
 
 class GoalInput extends Component {
   
-  constructor(){
+  constructor() {
     super()
     this.state = {
       aim: "",
-      category: "",
       strategy: ""
     }
   }
@@ -26,7 +25,6 @@ class GoalInput extends Component {
     this.props.addGoal(this.state);
     this.setState({
       aim: "",
-      category: "",
       strategy: ""
     })
   }
@@ -38,11 +36,6 @@ class GoalInput extends Component {
         <Form.Field>
           <label className="form-label">Aim</label>
           <input placeholder="Aim" id="aim" required value={this.state.aim} onChange={(e) => this.handleChange(e)} />
-        </Form.Field>
-
-        <Form.Field>
-          <label className="form-label">Category</label>
-          <input placeholder="Category" required id="category" value={this.state.category} onChange={this.handleChange}/>
         </Form.Field>
 
         <Form.Field>
