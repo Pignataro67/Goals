@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react';
 import { addGoal } from '../../actions/goalsActions';
 import { connect } from 'react-redux';
@@ -21,7 +20,7 @@ class GoalInput extends Component {
   }
 
   handleOnSubmit = e => {
-    e.preventDefault()
+    e.preventDefault();
     this.props.addGoal(this.state);
     this.setState({
       aim: "",
