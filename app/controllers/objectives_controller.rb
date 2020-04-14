@@ -29,7 +29,7 @@ class ObjectivesController < ApplicationController
     render json :@objective
   end
 
-  privaterender json: @objective
+  private
   def objective_params
     params.require(:objective).permit(:description)
   end
