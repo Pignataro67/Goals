@@ -1,3 +1,3 @@
 class Goal < ApplicationRecord
-  has_many :objective, dependent: :destroy
+  has_many :objectives, dependent: :destroy
 end
