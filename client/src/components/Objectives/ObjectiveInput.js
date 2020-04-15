@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { Button, Form } from 'semantic-ui-react';
 
 class ObjectiveInput extends Component {
@@ -35,7 +34,7 @@ class ObjectiveInput extends Component {
 
         <Button size='mini' type="submit">Submit</Button>
       </Form>
-    )
+    );
   }
 }
 
