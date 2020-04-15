@@ -46,7 +46,6 @@ export const deleteObjective = id => {
       'Content-Type': 'application/json'
     }
   }
-
   return dispatch => {
     fetch(`/objectives/${ id }`, data)
       .then(response => response.json())
