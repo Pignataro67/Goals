@@ -8,18 +8,18 @@ import GoalsHeader from '../components/Goals/GoalsHeader';
 
 class GoalsContainer extends Component {
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.fetchGoals()
   }
 
-  render(){
-    return(
-      <Container fluid textAlign='justified'>
+  render() {
+    return (
+      <Container>
         <GoalsHeader />
         <Goals goals={this.props.goals} deleteGoal={this.props.deleteGoal} />
         <GoalInput />
       </Container>
-    )
+    );
   }
 }
 
@@ -29,4 +29,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps, { fetchGoals, deleteGoal })(GoalsContainer);
+const mapDispatchToProps = dispatch => ({
+  fetchGoals: () => dispatch(fetchGoals()),
+  deleteGoal: id => dispatch(deleteGoal(id))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(GoalsContainer);

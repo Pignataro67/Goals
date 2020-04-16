@@ -8,7 +8,7 @@ const NavBar = () => {
     <NavLink to ="/"
       exact
       activeStyle={{
-        color: 'grey'
+        color: 'red'
       }}>Home
     </NavLink> 
 
@@ -17,11 +17,11 @@ const NavBar = () => {
     <NavLink to ="/goals"
       exact
       activeStyle={{
-        color: 'grey'
+        color: 'red'
       }}>Your Goals 
     </NavLink>
     </div>
-  )
+  );
 }
 
 export default NavBar;

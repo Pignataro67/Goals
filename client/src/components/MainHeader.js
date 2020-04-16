@@ -6,6 +6,6 @@ const MainHeader = () => (
     <h1>Aspire to Prespire</h1>
     <Clock />
   </div>
-)
+);
 
 export default MainHeader; 

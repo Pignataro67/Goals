@@ -23,14 +23,12 @@ export default class Clock extends Component {
     });
   }
 
-
   render() {
-
     return (
       <div>
         <h1 className="clock">
         {this.state.date.toLocaleTimeString()}</h1>
       </div>
-    )
+    );
   }
 }

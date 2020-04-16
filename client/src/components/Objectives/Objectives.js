@@ -13,8 +13,9 @@ const Objectives = (props) => {
          toggleCompleted={props.toggleCompleted}
        />
     </li>)
+
     return (
-      <div> 
+      <div className="objectives-box"> 
       <h1>{props.goal.aim}</h1>
       <label><strong>THE PLAN</strong></label>
       <p>{props.goal.strategy}</p>
