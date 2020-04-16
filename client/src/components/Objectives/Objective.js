@@ -7,8 +7,8 @@ export default class Objective extends Component {
     this.props.toggleCompleted(this.props.id)
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <div>
         <Icon className="pointer" name='edit' color='blue' onClick={() => console.log("edit some shhhhhh")} />
         change delete button to icon

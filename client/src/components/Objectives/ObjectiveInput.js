@@ -12,7 +12,7 @@ class ObjectiveInput extends Component {
   handleChange = (e) => {
     this.setState({
       [e.target.id] : e.target.value
-    })
+    });
   }
 
   handleOnSubmit = (e) => {
@@ -20,16 +20,16 @@ class ObjectiveInput extends Component {
     this.props.addObjective(this.state, this.props.goalId);
     this.setState({
       description: ''
-    })
+    });
   }
 
   render() {
-    return(
+    return (
         <Form inverted className="new-objective-form" onSubmit={(e) =>this.handleOnSubmit(e)}>
 
         <Form.Field>
           <label className="form-label">Add Objective</label>
-          <input placeholder="Define the milestones to help you reach your goal" id="description" required value={this.state.description} onChange={(e) =>this.handleChange(e)} />
+          <input placeholder="Define the milestones to help you reach your goal" id="description" required value={this.state.description} onChange={(e) => this.handleChange(e)} />
         </Form.Field>
 
         <Button size='mini' type="submit">Submit</Button>
