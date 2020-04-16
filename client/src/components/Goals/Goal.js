@@ -11,7 +11,7 @@ import { NavLink } from 'react-router-dom';
         
         <Button className="delete-button" basic color='red' size='mini' onClick={ () => deleteGoal(id)}>Delete</Button>
       </div>
-    )
+    );
   }
 
 export default Goal;
