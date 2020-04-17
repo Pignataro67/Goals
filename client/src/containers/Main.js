@@ -14,7 +14,7 @@ class Main extends Component {
       <div>
         <MainHeader />
         <Container>
-          <Header as='h3' className='tagline'>Tough times don't last; tough people do.</Header>
+          <Header as='h3' className='tagline'>Scared Money Won't Make Money</Header>
           <NavBar />
           
           <Container>

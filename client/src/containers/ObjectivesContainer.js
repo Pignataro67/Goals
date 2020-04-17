@@ -11,9 +11,9 @@ class ObjectivesContainer extends Component {
     this.props.fetchGoal(this.props.match.params.goalId)
   }
   
-  render(){
+  render() {
     const goalId = this.props.match.params.goalId
-    return(
+    return (
       <div>
         <Objectives
           key={this.props.goal.id}
@@ -25,7 +25,7 @@ class ObjectivesContainer extends Component {
         
         <ObjectiveInput addObjective={this.props.addObjective} goalId={goalId} />
       </div>
-    )
+    );
   }
 }
 
