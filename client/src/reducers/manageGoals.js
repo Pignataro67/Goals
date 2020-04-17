@@ -1,9 +1,10 @@
 export default function goalsReducer(state = {
   loading: false,
   goalsData: [],
-  goalData :[]
-  }, action){
-    switch(action.type){
+  goalData : []
+  }, action) {
+
+    switch(action.type) {
       case 'CREATE_GOAL':
         console.log('creating', action.payload)
         return {...state, goalsData:[...state.goalsData, action.payload]}            

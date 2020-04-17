@@ -14,14 +14,14 @@
 }
 
 .App-link {
-  color: #09d3ac;
+  color: #61dafb;
 }
 
 div.goal, div.objectives-box {
-  width: 75%;
-  padding: 15px;
+  width: 80%;
+  padding: 20px;
   border-style: solid;
-  border-radius: 15px;
+  border-radius: 10px;
   border-width: thin;
   background-color: white;
   margin-top: 10px;
@@ -30,7 +30,7 @@ div.goal, div.objectives-box {
 
 .new-goal-form {
   width: 45%;
-  padding: 25px;
+  padding: 30px;
   border-color: #282c34;
   color: white;
   position: relative;
@@ -38,12 +38,12 @@ div.goal, div.objectives-box {
 
 .new-objective-form {
   width: 60%;
-  padding: 25px;
+  padding: 20px;
 }
 
 h3.ui.header.tagline {
   color: white;
-  padding: 15px;
+  padding: 20px;
 }
 
 .objective-items {
@@ -54,7 +54,7 @@ body {
   background-color: #282c34;
 }
 
-button.ui.red.mini.basic.button.delete-button{
+button.ui.red.mini.basic.button.delete-button {
   float: right;
   margin-top: -20px;
 }
