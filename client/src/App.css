@@ -1,7 +1,7 @@
 .App-header {
   background-color: #282c34;
   /* background-image: url('./image1.jpg'); */
-  background-size: 100%;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position-y: -40px;
   min-height: 50vh;
@@ -18,19 +18,19 @@
 }
 
 div.goal, div.objectives-box {
-  width: 80%;
-  padding: 20px;
+  width: 70%;
+  padding: 30px;
   border-style: solid;
   border-radius: 10px;
   border-width: thin;
   background-color: white;
-  margin-top: 10px;
+  margin-top: 20px;
   color: black;
 }
 
 .new-goal-form {
   width: 45%;
-  padding: 30px;
+  padding: 40px;
   border-color: #282c34;
   color: white;
   position: relative;
